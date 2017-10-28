@@ -1,6 +1,7 @@
 package net.jspiner.knowyourkid.ui.login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PointF;
 import android.os.Bundle;
 import android.os.Handler;
@@ -36,17 +37,25 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
     private void init() {
         setStatusBarColor(R.color.black);
         adapter = new LoginBackgroundAdapter();
-        GridLayoutManager gridLayoutManager =
+        binding.backgroundRecyclerview.setLayoutManager(
                 new ScrollGridLayoutManager(
                         getBaseContext(),
                         3
-                ) {
-
-                };
-        binding.backgroundRecyclerview.setLayoutManager(gridLayoutManager);
+                )
+        );
         binding.backgroundRecyclerview.setAdapter(adapter);
         binding.backgroundRecyclerview.setOnTouchListener((view, motionEvent) -> true);
         autoScroll();
+
+        binding.button.setOnClickListener(__ -> {
+            startMainActivity();
+        });
+    }
+
+    private void startMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void autoScroll() {
@@ -57,9 +66,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                Log.i("LoginActivity", "new state : " + newState);
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-
                     isScrollingDown = !isScrollingDown;
                 }
             }

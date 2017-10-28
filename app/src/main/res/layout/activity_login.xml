@@ -23,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55000000"
+            android:background="#99000000"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:gravity="center"
-                android:text="슬로건좀 찾아서 넣어주세요. \n멋진걸로좀..."
+                android:text="니 자식을 알라"
                 android:textColor="@color/white" />
 
             <LinearLayout
@@ -73,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/radius_5_orange"
+                    android:foreground="?attr/selectableItemBackground"
                     android:text="로그인"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -80,6 +81,21 @@
 
 
         </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+        </FrameLayout>
 
     </FrameLayout>
 
