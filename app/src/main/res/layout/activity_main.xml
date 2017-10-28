@@ -169,6 +169,7 @@
 
                             <include
                                 layout="@layout/view_menu"
+                                android:id="@+id/menu_picture"
                                 app:img="@{@drawable/picture}"
                                 app:text="@{`사진`}" />
 
@@ -250,6 +251,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="56dp"
             android:id="@+id/drawer_left"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

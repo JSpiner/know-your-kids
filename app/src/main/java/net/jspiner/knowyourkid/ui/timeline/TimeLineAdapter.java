@@ -1,4 +1,4 @@
-package net.jspiner.knowyourkid.ui.main;
+package net.jspiner.knowyourkid.ui.timeline;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
@@ -6,16 +6,16 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import net.jspiner.knowyourkid.R;
-import net.jspiner.knowyourkid.ui.login.viewholder.LoginBackgroundViewHolder;
+import net.jspiner.knowyourkid.ui.timeline.TimeLineHolder;
 
-public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
+public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineHolder> {
 
     @Override
-    public MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MainViewHolder(
+    public TimeLineHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new TimeLineHolder(
                 DataBindingUtil.inflate(
                         LayoutInflater.from(parent.getContext()),
-                        R.layout.card_main_list,
+                        R.layout.card_timeline,
                         null,
                         false
                 )
@@ -23,8 +23,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(MainViewHolder holder, int position) {
-        holder.setData();
+    public void onBindViewHolder(TimeLineHolder holder, int position) {
+        holder.setData(position);
     }
 
     @Override
