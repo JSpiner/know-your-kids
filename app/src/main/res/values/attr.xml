@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FixedRatioView">
+        <attr name="widthRatio" format="integer" />
+        <attr name="heightRatio" format="integer"/>
+        <attr name="fixType" format="enum">
+            <enum name="WIDTH" value="1"/>
+            <enum name="HEIGHT" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BaseTextView">
+        <attr name="heightPerLine" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

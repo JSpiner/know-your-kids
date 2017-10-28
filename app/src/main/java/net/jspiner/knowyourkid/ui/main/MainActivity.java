@@ -1,8 +1,10 @@
-package net.jspiner.knowyourkid;
+package net.jspiner.knowyourkid.ui.main;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import net.jspiner.knowyourkid.R;
 
 public class MainActivity extends AppCompatActivity {
 

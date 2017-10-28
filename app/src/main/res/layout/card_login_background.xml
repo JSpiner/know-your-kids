@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <net.jspiner.knowyourkid.ui.base.FixedRatioView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fixType="WIDTH"
+        android:padding="1dp"
+        android:background="@color/gray"
+        app:heightRatio="1"
+        app:widthRatio="1">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </net.jspiner.knowyourkid.ui.base.FixedRatioView>
+
+</layout>
