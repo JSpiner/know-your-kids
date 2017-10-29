@@ -185,6 +185,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/menu_medicine"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/pill}"
                                 app:text="@{`투약동의`}" />
@@ -204,6 +205,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/menu_chatting"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/message}"
                                 app:text="@{`채팅`}" />
@@ -229,6 +231,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/menu_setting"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/settings}"
                                 app:text="@{`환경설정`}" />
@@ -258,9 +261,50 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:layout_marginTop="56dp"
             android:background="@color/white"
             android:orientation="vertical">
+
+            <include
+                android:id="@+id/drawer_notification"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/notepad}"
+                app:text="@{`알림장`}" />
+
+            <include
+                android:id="@+id/drawer_notice"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/mail}"
+                app:text="@{`공지사항`}" />
+
+            <include
+                android:id="@+id/drawer_picture"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/picture}"
+                app:text="@{`사진`}" />
+
+            <include
+                android:id="@+id/drawer_medicine"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/pill}"
+                app:text="@{`투약동의`}" />
+
+            <include
+                android:id="@+id/drawer_chatting"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/message}"
+                app:text="@{`채팅`}" />
+
+            <include
+                android:id="@+id/drawer_food"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/rice}"
+                app:text="@{`식단표`}" />
+
+            <include
+                android:id="@+id/drawer_setting"
+                layout="@layout/view_drawer_menu"
+                app:img="@{@drawable/settings}"
+                app:text="@{`환경설정`}" />
 
         </LinearLayout>
 

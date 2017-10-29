@@ -14,12 +14,14 @@ public class TimeLineHolder extends RecyclerView.ViewHolder {
 
     private CardTimelineBinding binding;
     private final int[] imgs = {
-            R.drawable.kids_1,
-            R.drawable.kids_2,
-            R.drawable.kids_3,
-            R.drawable.kids_4,
-            R.drawable.kids_5,
-            R.drawable.kids_6,
+            R.drawable.kid_1,
+            R.drawable.kid_2,
+            R.drawable.kid_3,
+            R.drawable.kid_4,
+            R.drawable.kid_5,
+            R.drawable.kid_6,
+            R.drawable.kid_7,
+            R.drawable.kid_8,
     };
 
     public TimeLineHolder(View itemView) {
@@ -33,17 +35,10 @@ public class TimeLineHolder extends RecyclerView.ViewHolder {
     }
 
     public void setData(int position) {
-        if (position == 0) {
-            Glide.with(binding.getRoot().getContext())
-                    .load(R.drawable.korea_1)
-                    .centerCrop()
-                    .into(binding.image);
-        } else {
-            Glide.with(binding.getRoot().getContext())
-                    .load(imgs[position % 6])
-                    .centerCrop()
-                    .into(binding.image);
-        }
+        Glide.with(binding.getRoot().getContext())
+                .load(imgs[position % 8])
+                .centerCrop()
+                .into(binding.image);
     }
 
 }
