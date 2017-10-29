@@ -31,5 +31,9 @@
             android:name=".ui.timeline.TimeLineActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".ui.notice.NoticeActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 </manifest>

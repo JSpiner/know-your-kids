@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import net.jspiner.knowyourkid.R;
 import net.jspiner.knowyourkid.databinding.ActivityMainBinding;
 import net.jspiner.knowyourkid.ui.base.BaseActivity;
+import net.jspiner.knowyourkid.ui.notice.NoticeActivity;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineAdapter;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineActivity;
 
@@ -36,13 +37,18 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         getSupportActionBar().setHomeButtonEnabled(true);
         toggle.syncState();
 
-        binding.menuPicture.getRoot().setOnClickListener(__ -> {
-            startTimeLineActivity();
-        });
+        binding.notice.getRoot().setOnClickListener(__ -> startNoticeActivity());
+        binding.notification.getRoot().setOnClickListener(__ -> startNoticeActivity());
+        binding.menuPicture.getRoot().setOnClickListener(__ -> startTimeLineActivity());
     }
 
-    private void startTimeLineActivity(){
+    private void startTimeLineActivity() {
         Intent intent = new Intent(getBaseContext(), TimeLineActivity.class);
+        startActivity(intent);
+    }
+
+    private void startNoticeActivity() {
+        Intent intent = new Intent(getBaseContext(), NoticeActivity.class);
         startActivity(intent);
     }
 }

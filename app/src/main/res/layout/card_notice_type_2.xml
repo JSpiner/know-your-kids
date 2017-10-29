@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="16dp"
+            android:text="1. 급식비 납부일이 다음주 화요일까지입니다. 참고바랍니다.\n2. 환절기 감기 조심하세요.\n3. 다음주 수요일 학부모 참관수업이 있습니다.\n4. 다음주부터 스쿨버스가 시범 운영됩니다."
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

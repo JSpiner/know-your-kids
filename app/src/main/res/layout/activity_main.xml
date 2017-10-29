@@ -142,6 +142,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/notification"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/notepad}"
                                 app:text="@{`알림장`}" />
@@ -155,6 +156,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/notice"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/mail}"
                                 app:text="@{`공지사항`}" />
@@ -168,8 +170,8 @@
                             android:layout_weight="1">
 
                             <include
-                                layout="@layout/view_menu"
                                 android:id="@+id/menu_picture"
+                                layout="@layout/view_menu"
                                 app:img="@{@drawable/picture}"
                                 app:text="@{`사진`}" />
 
@@ -251,11 +253,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="56dp"
             android:id="@+id/drawer_left"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:layout_marginTop="56dp"
             android:background="@color/white"
             android:orientation="vertical">
 

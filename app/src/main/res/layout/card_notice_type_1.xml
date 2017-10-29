@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림장"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="16dp"
+            android:text="1. 부모님께 KnowKid 설치하라고 알려드리기!\n2. 감기 조심하기!\n3. 내일 리코더수업, 리도커 준비하기"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>
