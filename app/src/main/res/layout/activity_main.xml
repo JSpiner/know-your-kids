@@ -215,6 +215,7 @@
                             android:layout_weight="1">
 
                             <include
+                                android:id="@+id/menu_food"
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/rice}"
                                 app:text="@{`식단표`}" />

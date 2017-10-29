@@ -3,6 +3,7 @@ package net.jspiner.knowyourkid.ui.timeline;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
+import android.view.MenuItem;
 
 import net.jspiner.knowyourkid.R;
 import net.jspiner.knowyourkid.databinding.ActivityTimelineBinding;

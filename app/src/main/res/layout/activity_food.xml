@@ -24,32 +24,25 @@
 
                 <include
                     layout="@layout/card_notice_title"
-                    app:text="@{`11월 29일(금)`}" />
+                    app:text="@{`11월 27일(월)`}" />
 
-                <include layout="@layout/card_notice_type_1" />
-
-                <include layout="@layout/card_notice_type_2" />
+                <include layout="@layout/card_food" />
 
                 <include
                     layout="@layout/card_notice_title"
-                    app:text="@{`11월 28일(목)`}" />
+                    app:text="@{`11월 28일(화)`}" />
 
-                <include layout="@layout/card_notice_type_1" />
-
-                <include layout="@layout/card_notice_type_2" />
+                <include layout="@layout/card_food" />
 
                 <include
                     layout="@layout/card_notice_title"
-                    app:text="@{`11월 27일(수)`}" />
+                    app:text="@{`11월 29일(수)`}" />
 
-                <include layout="@layout/card_notice_type_1" />
-
-                <include layout="@layout/card_notice_type_2" />
+                <include layout="@layout/card_food" />
 
             </LinearLayout>
 
         </ScrollView>
-
 
     </LinearLayout>
 

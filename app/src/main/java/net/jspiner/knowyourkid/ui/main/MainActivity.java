@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import net.jspiner.knowyourkid.R;
 import net.jspiner.knowyourkid.databinding.ActivityMainBinding;
 import net.jspiner.knowyourkid.ui.base.BaseActivity;
+import net.jspiner.knowyourkid.ui.food.FoodActivity;
 import net.jspiner.knowyourkid.ui.notice.NoticeActivity;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineAdapter;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineActivity;
@@ -40,6 +41,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         binding.notice.getRoot().setOnClickListener(__ -> startNoticeActivity());
         binding.notification.getRoot().setOnClickListener(__ -> startNoticeActivity());
         binding.menuPicture.getRoot().setOnClickListener(__ -> startTimeLineActivity());
+        binding.menuFood.getRoot().setOnClickListener(__ -> startFoodActivity());
     }
 
     private void startTimeLineActivity() {
@@ -49,6 +51,11 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private void startNoticeActivity() {
         Intent intent = new Intent(getBaseContext(), NoticeActivity.class);
+        startActivity(intent);
+    }
+
+    public void startFoodActivity() {
+        Intent intent = new Intent(getBaseContext(), FoodActivity.class);
         startActivity(intent);
     }
 }
