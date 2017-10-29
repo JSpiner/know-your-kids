@@ -11,4 +11,8 @@
     <color name="brown">#6B504A</color>
     <color name="black">#000000</color>
 
+    <color name="green">#32CD32</color>
+    <color name="light_orange">#77FFC107</color>
+    <color name="blue">#0645AD</color>
+
 </resources>

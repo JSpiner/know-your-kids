@@ -39,5 +39,9 @@
             android:name=".ui.food.FoodActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".ui.play.PlayActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 </manifest>

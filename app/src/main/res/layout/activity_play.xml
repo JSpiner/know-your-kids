@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_orange"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="몬테소리 축구교실"
+                            android:textColor="@color/blue"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ads by Google"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Since 2004. 개인, 성인그룹, 유소년, 기업레슨. 선수육성, 동영상 강좌"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://soccer.com/montesory"
+                        android:textColor="@color/blue" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:text="#활발한 한슬이에게 도움이 될 활동들"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <include
+                    layout="@layout/card_sports"
+                    app:image="@{@drawable/soccer}"
+                    app:subTitle="@{`축구를 하면 영리해지고, 민첩성이 좋아집니다. \n그 이유는 게임을 할 때 공을 가지고 빨리 달려야 하기 때문에 지구력을 요구하기 때문입니다. \n드리블을 하게 되면서 자연스레 민첩성과 균형감각까지 향상시켜 줍니다.`}"
+                    app:title="@{`축구`}" />
+
+                <include
+                    app:image="@{@drawable/scout}"
+                    app:title="@{`보이스카우트`}"
+                    app:subTitle="@{`보이 스카우트가 되면 커뮤니티와 국가에 봉사하며 시민 정신과 애국심 가치를 배울 수 있다.`}"
+                    layout="@layout/card_sports" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

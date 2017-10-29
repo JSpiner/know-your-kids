@@ -85,6 +85,7 @@
                             android:layout_height="0dp" />
 
                         <include
+                            android:id="@+id/menu_active"
                             layout="@layout/view_hashtag"
                             app:text="@{`활발한`}" />
 
@@ -219,7 +220,6 @@
                                 layout="@layout/view_menu"
                                 app:img="@{@drawable/rice}"
                                 app:text="@{`식단표`}" />
-
 
                         </LinearLayout>
 

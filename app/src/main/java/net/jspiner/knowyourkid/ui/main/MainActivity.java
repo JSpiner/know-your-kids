@@ -10,6 +10,7 @@ import net.jspiner.knowyourkid.databinding.ActivityMainBinding;
 import net.jspiner.knowyourkid.ui.base.BaseActivity;
 import net.jspiner.knowyourkid.ui.food.FoodActivity;
 import net.jspiner.knowyourkid.ui.notice.NoticeActivity;
+import net.jspiner.knowyourkid.ui.play.PlayActivity;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineAdapter;
 import net.jspiner.knowyourkid.ui.timeline.TimeLineActivity;
 
@@ -42,6 +43,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         binding.notification.getRoot().setOnClickListener(__ -> startNoticeActivity());
         binding.menuPicture.getRoot().setOnClickListener(__ -> startTimeLineActivity());
         binding.menuFood.getRoot().setOnClickListener(__ -> startFoodActivity());
+
+        binding.menuActive.getRoot().setOnClickListener(__ -> startPlayActivity());
     }
 
     private void startTimeLineActivity() {
@@ -54,8 +57,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         startActivity(intent);
     }
 
-    public void startFoodActivity() {
+    private void startFoodActivity() {
         Intent intent = new Intent(getBaseContext(), FoodActivity.class);
+        startActivity(intent);
+    }
+
+    private void startPlayActivity() {
+        Intent intent = new Intent(getBaseContext(), PlayActivity.class);
         startActivity(intent);
     }
 }
