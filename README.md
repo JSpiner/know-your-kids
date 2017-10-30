@@ -11,11 +11,15 @@ StartUpWeekend 2017 Incheon knowyourkids team.
 
 Demo Video
 ==
-[<img src="https://github.com/JSpiner/know-your-kids/raw/master/demo.png">](https://drive.google.com/open?id=0B1kt5eD2Jfb4Rlk2dXc0Z19pWXc)
+[<img src="https://github.com/JSpiner/know-your-kids/raw/master/demo.png" height="500px">](https://drive.google.com/open?id=0B1kt5eD2Jfb4Rlk2dXc0Z19pWXc)
+
+
+Try demo application
+==
+[<img src="https://github.com/JSpiner/know-your-kids/raw/master/screenshot.png" height="500px">](https://github.com/JSpiner/know-your-kids/raw/master/app-debug.apk)
 
 We are 1st Place!
-==
-
+== 
 winner winner chicken winner~
 
 ![1등](https://github.com/JSpiner/know-your-kids/raw/master/image.jpeg)
