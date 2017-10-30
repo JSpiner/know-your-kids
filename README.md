@@ -9,6 +9,10 @@ StartUpWeekend 2017 Incheon knowyourkids team.
 
 교사용 웹페이지 레포지토리 (보기)[https://github.com/honeymaro/KnowYourKid-Web]
 
+Demo Video
+==
+[<img src="https://github.com/JSpiner/know-your-kids/raw/master/demo.png">](https://drive.google.com/open?id=0B1kt5eD2Jfb4Rlk2dXc0Z19pWXc)
+
 We are 1st Place!
 ==
 
